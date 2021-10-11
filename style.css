@@ -16,24 +16,28 @@ body{
     justify-content: center;
     align-items: center;
 }
-input {
+#googleSearch {
     outline: 0;
-    border-width: 0 0 2px;
+    border-width: 0 0 4px;
     background: transparent;
     border-color: rgb(202, 200, 81);
     font-family: 'Fira Code', monospace;
     color: white;
-    font-size:1rem;
-  }
-  input:focus {
-    border-color: rgba(202, 200, 81, 0.788);
+    font-size: 1rem;
+    width: 500px;
+}
+#googleSearch:focus {
+  border-color: rgba(202, 200, 81, 0.788);
 
-  }
+}
 .searchButton{
-    background:rgb(202, 200, 81);
-
     background: transparent;
     outline: none;
     border: none;
     border-radius: 5px;
+}
+@media all and (max-width: 500px) {
+    #googleSearch{
+      width: 300px;
+    }
 }

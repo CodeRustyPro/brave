@@ -15,6 +15,7 @@
     <div class="search">
         <input type="text" id="googleSearch" autofocus/>
         <button onclick="SearchGoogle()" class="searchButton" id="googlesearchbutton">
+            <img src="Google.png" alt="Google">
         </button>
     </div>
     <script>
@@ -26,9 +27,14 @@
             }
         });
         function SearchGoogle() {
-            var query = document.getElementById("googleSearch").value;
 
-            window.open(`https://www.google.com/search?q=${query}`, "_blank");
+            var query = document.getElementById("googleSearch").value;
+            if (query==""){
+                console.log("Input something in the prompt nub");
+            }
+            else{
+                window.open(`https://www.google.com/search?q=${query}`, "_blank");
+            }
         }
     </script>
 </body>
